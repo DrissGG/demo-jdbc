@@ -62,6 +62,9 @@ public class TestDaoJdbc {
                 System.out.println("ID : " + f.getId() + " Nom: " + f.getNom());
             }
 			
+            Fournisseur f2 = new Fournisseur(4, " « L’Espace Création »");
+			// insérer un fournisseur appelé  L’Espace Création 
+			fournisseurDao.insert(f2);
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
