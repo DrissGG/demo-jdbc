@@ -1,14 +1,14 @@
 /**
  * 
  */
-package fr.diginamic.jdbc.dao;
+package fr.diginamic.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
+import fr.diginamic.jdbc.dao.model.copy.FournisseurDaoJdbc;
 import fr.diginamic.jdbc.entites.Fournisseur;
 
 /**
@@ -48,7 +48,7 @@ public class TestDaoJdbc {
             }
 
             // Supprimer le fournisseur "France matériaux"
-            Fournisseur fournisseurASupprimer = new Fournisseur(9, "France matériaux");
+            Fournisseur fournisseurASupprimer = new Fournisseur(11, "France matériaux");
             boolean isDeleted = fournisseurDao.delete(fournisseurASupprimer);
             if (isDeleted) {
                 System.out.println("Fournisseur supprimé avec succès.");

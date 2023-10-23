@@ -1,7 +1,7 @@
 /**
  * 
  */
-package fr.diginamic.jdbc.dao;
+package fr.diginamic.jdbc.dao.model.copy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,6 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.diginamic.jdbc.dao.FournisseurDao;
 import fr.diginamic.jdbc.entites.Fournisseur;
 
 /**
